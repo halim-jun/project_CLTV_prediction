@@ -1,16 +1,17 @@
 # project_CLTV_prediction
 
-## 프로젝트 개요 : 
+## 1. 프로젝트 개요 : 
 
 - 고객의 기존 거래 내역을 통해 다음 월의 구매 수치를 예측합니다.
 - Commerce 사의 상거래 데이터를 이용 
 - 해당 모델을 고객의 구매 금액을 선 파악하여, 마케팅 비용을 최적화 하고 구매 액수가 감소할 고객을 미리 파악하여 선제적 대응을 취하는 비즈니스 전략 수행을 목표로 하고 있습니다.
+- 데이터 : 국내 e commerce 사 데이터
 
-## 1. 해커톤 3차 제출용 파일 : 
+## 2. 해커톤 3차 제출용 파일 : 
 
 - 대부분의 EDA, Machine learning model 구축 과정을 설명해두었습니다.
 
-## 2. python for machine learning operation with AWS s3
+## 3. python for machine learning operation with AWS s3
 - retrieve_data.py
 : AWS 에 데이터를 올리거나 내려받는 boto3 패키지를 활용한 코드 입니다. 해당 access key 는 현재 보안상의 이유로 deactivate 해 두었습니다.
 - preprocess.py
