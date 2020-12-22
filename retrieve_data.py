@@ -18,8 +18,8 @@ def download_data(path=''):
     now=datetime.datetime.now()
     date_time = now.strftime("%Y_%m_%d__%H_%M_%S")
     file_name=date_time+'source_file.csv'
-    s3 = boto3.client('s3', aws_access_key_id='AKIAJFG4KPBJCLYUUCIA', 
-    aws_secret_access_key='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')
+    s3 = boto3.client('s3', aws_access_key_id='***********', 
+    aws_secret_access_key='**********')
     s3.download_file('projectltv', 'Transaction.csv', file_name)
     df=pd.read_csv(path+file_name)
     return df
@@ -31,8 +31,8 @@ def download_data(path=''):
 # uploadDirectory(os.getenv('HOME')+'/aiffel/kaggle/Lpoint/weights/2020_12_17__15_17_12_weights', 'projectltv')
 
 def upload_model_weight(weight_path,bucketname):
-    s3 = boto3.client('s3', aws_access_key_id='AKIAJFG4KPBJCLYUUCIA',
-     aws_secret_access_key='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')
+    s3 = boto3.client('s3', aws_access_key_id='********',
+     aws_secret_access_key='***************')
     saved_model=load_model(weight_path, compile=False)
     model_to_json=saved_model.to_json()
     with open('model_to_json.json', "w") as json_file:
@@ -49,7 +49,7 @@ def upload_model_weight(weight_path,bucketname):
 # loaded_model = model_from_json(loaded_model_json)
 
 def download_model_weight(weight_to_download,as_file_name):
-    s3 = boto3.client('s3', aws_access_key_id='AKIAJFG4KPBJCLYUUCIA', aws_secret_access_key='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')
+    s3 = boto3.client('s3', aws_access_key_id='*************', aws_secret_access_key='*************')
     s3.download_file('projectltv', weight_to_download, as_file_name)
     # load json and create model
     json_file = open(as_file_name, 'r')
