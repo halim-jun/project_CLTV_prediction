@@ -9,7 +9,9 @@
 
 ## 2. Final_product.ipynb : 
 
-- 대부분의 EDA, Machine learning model 구축 과정을 설명해두었습니다. (Most EDA and process for developing model are explained)
+- 대부분의 EDA, Machine learning model 구축 과정을 자세히 설명해두었습니다. (Most EDA and process for developing model are explained in this file)
+- 해당 노트에는 세부적인 코드가 포함되어 있으므로 간략한 설명을 위해서는 "Project Description (Eng).pdf"/ "프로젝트 설명 (Kor).pdf" 을 참고해주세요!
+(This note contains detailed code : for better explanation refer to the "Project Description (Eng).pdf"
 
 ## 3. python for machine learning operation with AWS s3
 - retrieve_data.py
@@ -22,4 +24,8 @@
 : 저장되어있는 weight 를 이용하여 모델의 성능을 구체적으로 확인하고 결과값을 저장하는 파일입니다. (Code that specifies model performance and returns the outcome)
 - execution.py
 : 위의 일련의 과정을 수행하여 클라우드 상의 모델 다운로드 -> 머신러닝 수행 -> 결과값 도출 ->weight 클라우드에 재 업로드 시킵니다. (This code runs through all the machine learning operation process stated above. It downloads data from the s3 cloud -> Model learning -> Returns the outcome -> Reupload the model weight to the AWS cloud)
+
+# 4. Project Description
+
+- For easy to understand explanation of the project, please kindly refer to the "Project Description (Eng).pdf" or "프로젝트 설명 (Kor).pdf"
 
