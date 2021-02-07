@@ -7,11 +7,12 @@
 - 해당 모델을 고객의 구매 금액을 선 파악하여, 마케팅 비용을 최적화 하고 구매 액수가 감소할 고객을 미리 파악하여 선제적 대응을 취하는 비즈니스 전략 수행을 목표로 하고 있습니다. (The model aims to optimize marketing cost and take preemptive marketing strategy by figuring out customers who's transaction volume is expected to decrease or increase)
 - 데이터 : 국내 e commerce 사 데이터 (Data : Korean Commerce company data)
 
-## 2. Final_product.ipynb : 
+## 2. Final_product.ipynb, result.ipynb
 
 - 대부분의 EDA, Machine learning model 구축 과정을 자세히 설명해두었습니다. (Most EDA and process for developing model are explained in this file)
 - 해당 노트에는 세부적인 코드가 포함되어 있으므로 간략한 설명을 위해서는 "Project Description (Eng).pdf"/ "프로젝트 설명 (Kor).pdf" 을 참고해주세요!
 (This note contains detailed code : for better explanation refer to the "Project Description (Eng).pdf"
+- result : 모델의 결과물, 성과 분석 파일 입니다. 
 
 ## 3. python for machine learning operation with AWS s3
 - retrieve_data.py
